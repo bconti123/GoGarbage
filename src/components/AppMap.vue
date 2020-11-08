@@ -42,44 +42,7 @@ export default {
             selectedTag: 'any',
             currentLocation: {lat:10, lng:10},
             center: {lat:10, lng:10},
-            markers: [
-                {
-                    name: 'Site 1',
-                    type: 'bin',
-                    tags: ['compost', 'general'],
-                    position: {lat:42.6, lng:-73.7},
-                },
-                {
-                    name: 'Site 2',
-                    type: 'site',
-                    tags: ['metal', 'plastic'],
-                    position: {lat:42.6, lng:-73.2},
-                },
-                {
-                    name: 'Site 3',
-                    type: 'bin',
-                    tags: ['compost', 'general', 'paper'],
-                    position: {lat:42.1, lng:-73.7},
-                },
-                {
-                    name: 'Site 4',
-                    type: 'site',
-                    tags: ['plastic'],
-                    position: {lat:42.5, lng:-74},
-                },
-                {
-                    name: 'Site 5',
-                    type: 'bin',
-                    tags: ['general'],
-                    position: {lat:41.6, lng:-71.7},
-                },
-                {
-                    name: 'Site 6',
-                    type: 'site',
-                    tags: ['compost', 'general'],
-                    position: {lat:41.3, lng:-74.7},
-                }
-            ],
+            markers: [],
             tags: {
                 general: 'primary',
                 plastic: 'secondary',
@@ -207,9 +170,9 @@ export default {
         },
         getIcon(type) {
             if (type === 'bin') {
-                return 'http://www.myiconfinder.com/uploads/iconsets/32-32-6148db914e2614b0fba3d2bd94211f61.png';
+                return 'https://go-garbage.xyz/img/bin-icon.png';
             } else if (type == 'site') {
-                return 'http://www.myiconfinder.com/uploads/iconsets/32-32-7bf4e17feae2a7fe1538d4ff9d56f666.png';
+                return 'https://go-garbage.xyz/img/site-icon.png';
             }
             return ''
         }
