@@ -148,7 +148,7 @@ export default {
             return data;
         },
         async getData() {
-            const res = await this.axios.get('http://35.223.210.29:4000/data', null);
+            const res = await this.axios.get('https://go-garbage.xyz/api', null);
             console.log(res.data);
             return res.data;
         },

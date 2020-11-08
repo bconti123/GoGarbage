@@ -81,7 +81,7 @@ export default {
             //     console.log(response);
             //     console.log(res);
             // });
-            const res = await this.axios.post("http://35.223.210.29:4000/data", {
+            const res = await this.axios.post("https://go-garbage.xyz/api", {
                 name: this.form.name,
                 type: this.form.type,
                 tags: this.form.tags,
